@@ -1,0 +1,38 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Diagnostic output
+.eslintcache
+
+# Production directory
+dist
+build
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Testing
+coverage/
+
+# Local Vite cache
+.vite/
