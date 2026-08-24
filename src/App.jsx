@@ -1,17 +1,14 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Banner from "./Components/Banner/Banner";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
-        <Routes>
-          <Route path="/" element={<div></div>} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <div>
+      <Routes>
+        <Route path="/" element={<Banner />} />
+      </Routes>
+    </div>
   );
 }
 
