@@ -1,4 +1,5 @@
-import styles from "./Slider.module.css";
+import React from 'react'
+import styles from "./SlideShow.module.css";
 import MovieCard from "../MovieCard/MovieCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -9,8 +10,8 @@ function SlideShow({ title, movies }) {
   return (
     <div>
       <h2 className={styles.title}>{title}</h2>
-
       <div className={styles.Row}>
+        {/* Movie Cards  */}
         <Swiper
           modules={[Navigation]}
           navigation
@@ -29,3 +30,4 @@ function SlideShow({ title, movies }) {
 }
 
 export default SlideShow;
+    
