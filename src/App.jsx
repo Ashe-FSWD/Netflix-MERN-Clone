@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Banner from "./Components/Banner/Banner";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Banner />} />
+        <Route path="/" element={<Header />} />
       </Routes>
     </div>
   );
