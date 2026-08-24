@@ -1,0 +1,25 @@
+/* Main wrapper for each row section */
+.mainWrapper {
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+/* Row title (e.g., Trending Now, Movie Suggestion) */
+.mainWrapper h2 {
+  font-size: 1 rem;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainWrapper {
+    padding: 16px 20px;
+  }
+
+  .mainWrapper h2 {
+    font-size: 1.3rem;
+  }
+}
