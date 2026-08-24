@@ -1,3 +1,4 @@
+
 // //import { useState } from 'react'
 // import { BrowserRouter } from "react-router-dom";
 // //import Header from "./Components/Header/Header";
@@ -22,3 +23,19 @@
 // }
 
 // export default App;
+
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Banner from "./Components/Banner/Banner";
+
+function App() {
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Banner />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
