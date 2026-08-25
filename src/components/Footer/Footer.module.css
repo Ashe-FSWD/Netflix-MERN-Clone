@@ -1,0 +1,151 @@
+.footer {
+    width: 100%;
+    background-color: #141414;
+    color: #737373;
+    padding: 45px 0 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  /* =========================
+     SOCIAL MEDIA
+  ========================= */
+  
+  .socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 25px;
+  }
+  
+  .socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    color: #ffffff;
+    font-size: 20px;
+  
+    text-decoration: none;
+  
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .socialIcon:hover {
+    color: #b3b3b3;
+    transform: translateY(-2px);
+  }
+  
+  /* =========================
+     FOOTER LINKS
+  ========================= */
+  
+  .linksGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 50px;
+    row-gap: 15px;
+  }
+  
+  .linkColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footerLink {
+    color: #737373;
+    font-size: 13px;
+    line-height: 1.5;
+  
+    text-decoration: none;
+  
+    transition: color 0.2s ease;
+  }
+  
+  .footerLink:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     COPYRIGHT
+  ========================= */
+  
+  .copyright {
+    margin-top: 28px;
+    margin-bottom: 0;
+  
+    color: #737373;
+    font-size: 12px;
+  }
+  
+  /* =========================
+     TABLET
+  ========================= */
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 0 20px;
+    }
+  
+    .container {
+      padding: 0 30px;
+    }
+  
+    .linksGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px 40px;
+    }
+  
+    .socialLinks {
+      gap: 24px;
+    }
+  }
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 35px 0 20px;
+    }
+  
+    .container {
+      padding: 0 20px;
+    }
+  
+    .socialLinks {
+      gap: 22px;
+      margin-bottom: 30px;
+    }
+  
+    .socialIcon {
+      font-size: 19px;
+    }
+  
+    .linksGrid {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 25px;
+    }
+  
+    .linkColumn {
+      gap: 14px;
+    }
+  
+    .footerLink {
+      font-size: 12px;
+    }
+  
+    .copyright {
+      margin-top: 30px;
+      font-size: 11px;
+    }
+  }

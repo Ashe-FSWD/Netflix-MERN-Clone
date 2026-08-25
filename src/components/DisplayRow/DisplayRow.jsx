@@ -1,6 +1,6 @@
-import SlideShow from "../SlideShow/SlideShow";
+import SlideShow from "../Slider/Slider";
 import styles from "./DisplayRow.module.css";
-import { MovieInstance } from "../../Utility/MovieInstance";
+import { movieInstance } from "../../Utility/MovieInstance";
 import { useEffect, useState } from "react";
 import requests from "../../Utility/MovieRequest";
 
@@ -29,14 +29,14 @@ function DisplayRow() {
           romanceRes,
           documentariesRes,
         ] = await Promise.all([
-          MovieInstance.get(requests.fetchTrending),
-          MovieInstance.get(requests.fetchNetflixOriginals),
-          MovieInstance.get(requests.fetchTopRatedMovies),
-          MovieInstance.get(requests.fetchActionMovies),
-          MovieInstance.get(requests.fetchComedyMovies),
-          MovieInstance.get(requests.fetchHorrorMovies),
-          MovieInstance.get(requests.fetchRomanceMovies),
-          MovieInstance.get(requests.fetchDocumentaries),
+          movieInstance.get(requests.fetchTrending),
+          movieInstance.get(requests.fetchNetflixOriginals),
+          movieInstance.get(requests.fetchTopRatedMovies),
+          movieInstance.get(requests.fetchActionMovies),
+          movieInstance.get(requests.fetchComedyMovies),
+          movieInstance.get(requests.fetchHorrorMovies),
+          movieInstance.get(requests.fetchRomanceMovies),
+          movieInstance.get(requests.fetchDocumentaries),
         ]);
 
         setMovies({
