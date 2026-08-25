@@ -1,4 +1,4 @@
-import SlideShow from "../Slider/Slider";
+// import SlideShow from "../Slider/Slider";
 import styles from "./DisplayRow.module.css";
 import { movieInstance } from "../../Utility/MovieInstance";
 import { useEffect, useState } from "react";
