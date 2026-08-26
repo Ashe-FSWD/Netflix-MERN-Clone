@@ -58,17 +58,6 @@ function DisplayRow() {
   }, []);
 
   return (
-    // <div className={styles.mainWrapper}>
-
-    //   <SlideShow title="Netflix Trending" movies={movies.trending} />
-    //   <SlideShow title="Popular on Netflix" movies={movies.netflixOriginals} />
-    //   <SlideShow title="Action" movies={movies.action} />
-    //   <SlideShow title="Top Rated" movies={movies.topRated} />
-    //   <SlideShow title="Comedy" movies={movies.comedy} />
-    //   <SlideShow title="Horror" movies={movies.horror} />
-    //   <SlideShow title="Romance" movies={movies.romance} />
-    //   {/* <SlideShow title="Documentaries" movies={movies.documentaries} /> */}
-    // </div>
     <div className={styles.mainWrapper}>
       <SlideShow title="Netflix Trending" movies={movies.trending} />
       <SlideShow title="Popular on Netflix" movies={movies.netflixOriginals} />
