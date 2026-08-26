@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-// import Header from "./components/Header/Header";
+import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
-import DisplayRow from "./components/DisplayRow/DisplayRow";
-// import Footer from "./components/Footer/Footer";
+// import DisplayRow from "./components/DisplayRow/DisplayRow";
+import Footer from "./components/Footer/Footer";
 
 function Home() {
   return (
@@ -18,11 +18,11 @@ function Home() {
 function App() {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
